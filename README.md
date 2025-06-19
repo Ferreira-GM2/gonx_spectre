@@ -92,11 +92,12 @@ Ferramentas de Anonimato e Privacidade
 A Gonx Spectre vem com um arsenal de ferramentas para proteger sua identidade e dados.
 
 1. Limpeza de Rastros com sensitive_clear.sh
-Um script poderoso chamado sensitive_clear.sh está disponível em seu diretório home (~/.sensitive_clear.sh) para apagar logs do sistema, histórico de comandos e dados de navegadores de terminal de forma segura usando shred.
+Um script poderoso chamado sensitive_clear.sh está disponível em seu diretório home (~/.sensitive_clear.sh) para apagar logs do sistema, histórico de comandos e dados de navegadores terminal de forma segura usando shred, PORTANTO BAIXE E TRABALHE EM ARQUIVOS SENSÍVEIS NO DIRETÓRIO /tmp/sensitive, após suas atividades, basta executar o script de limpeza e sobrescrita.
 
 Uso:
 
 > sudo bash ~/.sensitive_clear.sh
+
 Recomendação: Execute este script regularmente, especialmente antes de desligar ou após sessões de uso intensivo para garantir que nenhum rastro seja deixado.
 
 2. Outras Ferramentas de Privacidade e Segurança
