@@ -258,7 +258,7 @@ Exemplos:
 
 > extract arquivo.tar.gz
 > extract meu_documento.zip
-> extract extract software.7z
+> extract software.7z
 
 Considerações Finais e Dicas de Segurança
 A Gonx Spectre Edition V4.1 é uma ferramenta poderosa para privacidade e OSINT, mas lembre-se:
