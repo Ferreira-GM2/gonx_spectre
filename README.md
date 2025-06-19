@@ -16,7 +16,7 @@ A **Gonx Spectre Edition V4.1** foi desenvolvida pensando em usuários que neces
 * **Anonimato Integrado**: Com o **Tor** pré-configurado e o **ProxyChains4**, suas conexões são roteadas através da rede Tor, dificultando o rastreamento da sua atividade online.
 * **Ferramentas de Privacidade**: Inclui utilitários para limpeza de rastros, criptografia de dados e remoção de metadados, garantindo que suas ações permaneçam confidenciais.
 * **Recursos de OSINT**: Pacotes como **Maigret**, **SpiderFoot**, **Sherlock**, **Recon-ng** e **theHarvester** transformam a Spectre em uma poderosa caixa de ferramentas para investigação e coleta de informações de fontes abertas.
-* **Otimização e Leveza**: Partindo de um Debian Server minimalista, a distro foi "desinchada" de componentes desnecessários (como ambientes gráficos e serviços de impressão), resultando em um sistema leve e focado em desempenho.
+* **Otimização**: Partindo de um Debian Server minimalista, foram removidos alguns componentes desnecessários (como ambientes gráficos e serviços de impressão), resultando em um sistema focado em desempenho.
 * **Customização Avançada**: Com aliases de comando convenientes e um script de limpeza de rastros, a Spectre foi personalizada para ser intuitiva e eficiente.
 
 ---
@@ -28,7 +28,9 @@ O arquivo `.ova` da Gonx Spectre Edition V4.1, está disponível para download n
 * **Mega.nz:** [Link para o Mega.nz](https://mega.nz/file/sua_distro.ova.xz)
 * **Internet Archive:** [Link para o Internet Archive](https://archive.org/details/gonx_spectre_v4.1)
 
-Após baixar o arquivo, importe-o para seu software de virtualização preferido (VirtualBox, VMware, etc.).
+Após baixar o arquivo, importe-o para seu software de virtualização.
+
+RECOMENDAMOS A UTILIZAÇÃO EM MODO ESCALONADO PARA MELHOR VISUALIZAÇÃO DA TELA NO VIRTUALBOX, CLICANDO EM `visualizar` | `Alternar para o mode escalonado`, ou HOST + C no teclado.
 ---
 ---
 
@@ -55,6 +57,24 @@ Para obter privilégios de `root`:
 
 Após o login, você estará em um ambiente de linha de comando (CLI).
 
+OBS: VOCÊ TAMBÉM PODERÁ SE CONECTAR VIA SSH PARA UTILIZAÇÃO DE COPIA E COLA E MELHOR DESEMPENHO.
+NO TERMINAL DIGITE
+
+> ip a `para verificar o seu ip`
+
+EM OUTRO TERMINAL PARA CONEXÃO SSH BASTA DIGTAL
+
+> ssh spectre@SEU_IP_LOCAL
+
+PASSWORD: spectre
+
+
+O TECLADO PADRÃO NÃO É O br-abnt2, entretanto recomendamos manter o padrão US, para maior conforto de escrita faça uma conexão ssh e posteriormente desative o ssh com o comando 
+
+> sshoff
+
+> sshstat `verifica o estado do ssh`
+
 #### 1. Verificando o Anonimato com Tor e ProxyChains4
 
 O serviço Tor já está habilitado e em execução. Você pode verificar seu status com:
@@ -62,7 +82,10 @@ O serviço Tor já está habilitado e em execução. Você pode verificar seu st
 
 > systemctl status tor
 
-### Poderá taambém verificar com curl ou navegadores de terminal
+![image](https://github.com/user-attachments/assets/e2aad561-0df9-4dce-94b8-2a128d76182a)
+
+
+### Poderá também verificar com curl ou navegadores de terminal
 
 
 > proxychains4 curl https://check.torproject.org
@@ -79,6 +102,9 @@ O serviço Tor já está habilitado e em execução. Você pode verificar seu st
 
 
 > gonxlynx https://check.torproject.org
+
+![image](https://github.com/user-attachments/assets/f96ceb01-69dc-42a3-beeb-bf1b54a74e38)
+
 
 > gonxelinks https://check.torproject.org
 
