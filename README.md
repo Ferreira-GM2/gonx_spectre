@@ -49,23 +49,23 @@ Após o login, você estará em um ambiente de linha de comando (CLI).
 
 O serviço Tor já está habilitado e em execução. Você pode verificar seu status com:
 
-> bash
+- bash
 systemctl status tor
 
 ###Poderá taambém verificar com curl ou navegadores de terminal
 
-> bash
+- bash
 proxychains4 curl https://check.torproject.org
 
 
-```bash
+- bash
 proxychains4 lynx https://check.torproject.org
 proxychains4 elinks https://check.torproject.org
 proxychains4 w3m https://check.torproject.org
 
 ###Ou com funções para rotatividade de user agents
 
-```bash
+- bash
 gonxlynx https://check.torproject.org
 gonxelinks https://check.torproject.org
 gonxw3m https://check.torproject.org
@@ -92,8 +92,7 @@ Um script poderoso chamado sensitive_clear.sh está disponível em seu diretóri
 
 Uso:
 
-```Bash
-
+- bash
 sudo bash ~/.sensitive_clear.sh
 Recomendação: Execute este script regularmente, especialmente antes de desligar ou após sessões de uso intensivo para garantir que nenhum rastro seja deixado.
 
@@ -116,16 +115,14 @@ Localização: ~/osint-tools/maigret
 
 Ativação do Ambiente Virtual:
 
-```Bash
-
+- bash
 cd ~/osint-tools/maigret
 source venv/bin/activate
 Exemplo de Uso:
 
 Para buscar um nome de usuário em diversas plataformas:
 
-```Bash
-
+- bash
 maigret --proxy socks5://127.0.0.1:9050 nome_de_usuario
 Nota: Sempre use o proxychains4 ou configure o proxy diretamente nas ferramentas para garantir que as requisições passem pelo Tor.
 
@@ -134,8 +131,7 @@ Localização: ~/osint-tools/spiderfoot
 
 Ativação do Ambiente Virtual:
 
-```Bash
-
+- bash
 cd ~/osint-tools/spiderfoot
 source venv/bin/activate
 Uso (Interface de Linha de Comando):
@@ -145,8 +141,7 @@ Bash
 sudo sfcli.py
 O sfcli.py é a interface de linha de comando do SpiderFoot. Para iniciar um scan:
 
-```Bash
-
+- bash
 sfcli.py --target exemplo.com --modules all --level 3 --output file.json
 Recomendação: Para uso completo do SpiderFoot com sua interface web, você precisaria de um ambiente gráfico e configurar o acesso via navegador, o que não é o foco desta distro. A versão CLI é útil para automação e scripts.
 
@@ -155,30 +150,27 @@ Localização: ~/osint-tools/sherlock
 
 Ativação do Ambiente Virtual:
 
-```Bash
-
+- bash
 cd ~/osint-tools/sherlock
 source venv/bin/activate
 Exemplo de Uso:
 
 Para verificar a existência de um nome de usuário:
 
-```Bash
-
+- bash
 proxychains4 sherlock nome_de_usuario
 4. Recon-ng (Framework de Reconhecimento)
 Localização: ~/osint-tools/recon-ng
 
 Ativação do Ambiente Virtual:
 
-```Bash
-
+- bash
 cd ~/osint-tools/recon-ng
 source venv/bin/activate
+
 Inicialização:
 
-```Bash
-
+- bash
 ./recon-ng
 Exemplos de Comandos dentro do Recon-ng:
 
@@ -192,37 +184,34 @@ Definir opções do módulo:
 options set SOURCE example.com
 Executar o módulo:
 run
+
 5. theHarvester (Coleta de Informações de Subdomínios, E-mails, etc.)
 Localização: ~/osint-tools/theHarvester
 
 Ativação do Ambiente Virtual:
 
-```Bash
-
+- bash
 cd ~/osint-tools/theHarvester
 source venv/bin/activate
 Exemplo de Uso:
 
 Para buscar e-mails e subdomínios de um domínio usando a fonte Google:
 
-```Bash
-
+- bash
 proxychains4 theHarvester -d example.com -l 500 -b google
 6. Holehe (Verifica se um E-mail está Registrado em Sites)
 Localização: ~/osint-tools/holehe
 
 Ativação do Ambiente Virtual:
 
-```Bash
-
+- bash
 cd ~/osint-tools/holehe
 source venv/bin/activate
 Exemplo de Uso:
 
 Para verificar se um e-mail está associado a serviços online:
 
-```Bash
-
+- bash
 proxychains4 holehe usuario@exemplo.com
 Outras Ferramentas Incluídas
 John (John the Ripper): Utilitário de cracking de senhas.
@@ -242,8 +231,7 @@ bash-completion: Habilita o auto-completar para comandos e argumentos no Bash.
 Desinstalação e Limpeza de Pacotes
 Caso precise remover um programa específico e limpar os rastros:
 
-```Bash
-
+- bash
 sudo apt remove --purge <nome_do_programa>
 sudo apt autoremove
 sudo apt clean
@@ -254,8 +242,7 @@ Uma função extract foi adicionada ao seu ~/.bashrc para facilitar a descompact
 
 Uso:
 
-```Bash
-
+- bash
 extract <arquivo_compactado>
 Exemplos:
 
