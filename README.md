@@ -20,7 +20,13 @@ A **Gonx Spectre Edition V4.1** foi desenvolvida pensando em usuários que neces
 
 ### Credenciais de Acesso
 
-Ao iniciar a máquina virtual, você acessará o ambiente via SSH. Use as seguintes credenciais:
+* **Paasword para descriptografia**: `spectrepassword`
+Recomendamos inicialmente mudar a senha padrão no virtualbox no campo > Geral > Criptografia de Disco
+![image](https://github.com/user-attachments/assets/1c41bf89-9cea-41e5-8b7a-dcc001fdaf35)
+
+
+
+Ao iniciar a máquina virtual, você acessará o TERMINAL. Use as seguintes credenciais:
 
 * **Login**: `spectre`
 * **Senha**: `spectre`
