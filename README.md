@@ -69,10 +69,11 @@ EM OUTRO TERMINAL PARA CONEXÃO SSH BASTA DIGTAL
 PASSWORD: spectre
 
 
-O TECLADO PADRÃO NÃO É O br-abnt2, entretanto recomendamos manter o padrão US, para maior conforto de escrita faça uma conexão ssh e posteriormente desative o ssh com o comando 
+O TECLADO PADRÃO NÃO É O br-abnt2, entretanto recomendamos manter o padrão US, para maior conforto de escrita faça uma conexão ssh e quando finalizar as atividades desative o ssh. 
+COMANDOS ÚTEIS PARA O SSH:
 
-> sshoff
-
+> sshoff `desativa o ssh (recomendamos mante-lo desativado` 
+> sshon `ativa o ssh`
 > sshstat `verifica o estado do ssh`
 
 #### 1. Verificando o Anonimato com Tor e ProxyChains4
