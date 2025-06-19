@@ -60,14 +60,18 @@ O serviço Tor já está habilitado e em execução. Você pode verificar seu st
 
 
 > proxychains4 lynx https://check.torproject.org
+
 > proxychains4 elinks https://check.torproject.org
+
 > proxychains4 w3m https://check.torproject.org
 
 ### Ou com funções para rotatividade de user agents
 
 
 > gonxlynx https://check.torproject.org
+
 > gonxelinks https://check.torproject.org
+
 > gonxw3m https://check.torproject.org
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
