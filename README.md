@@ -49,8 +49,8 @@ Após o login, você estará em um ambiente de linha de comando (CLI).
 
 O serviço Tor já está habilitado e em execução. Você pode verificar seu status com:
 
-bash
-systemctl status tor
+
+> systemctl status tor
 
 ###Poderá taambém verificar com curl ou navegadores de terminal
 
