@@ -20,13 +20,23 @@ A **Gonx Spectre Edition V4.1** foi desenvolvida pensando em usuários que neces
 * **Customização Avançada**: Com aliases de comando convenientes e um script de limpeza de rastros, a Spectre foi personalizada para ser intuitiva e eficiente.
 
 ---
+### Download da Gonx Spectre Edition V4.1
+
+O arquivo `.ova` da Gonx Spectre Edition V4.1, está disponível para download nos seguintes espelhos:
+
+* **Google Drive:** [Link para o Google Drive](https://drive.google.com/sua_pasta/gonx_spectre_v4.1.ova.xz)
+* **Mega.nz:** [Link para o Mega.nz](https://mega.nz/file/sua_distro.ova.xz)
+* **Internet Archive:** [Link para o Internet Archive](https://archive.org/details/gonx_spectre_v4.1)
+
+Após baixar o arquivo, importe-o para seu software de virtualização preferido (VirtualBox, VMware, etc.).
+---
+---
 
 ### Credenciais de Acesso
 
-* **Paasword para descriptografia**: `spectrepassword`
-Recomendamos inicialmente mudar a senha padrão no virtualbox no campo > Geral > Criptografia de Disco
-![image](https://github.com/user-attachments/assets/1c41bf89-9cea-41e5-8b7a-dcc001fdaf35)
 
+Recomendamos fortemente a criação de uma senha forte de criptografia no campo > Geral > Criptografia de Disco
+![image](https://github.com/user-attachments/assets/1c41bf89-9cea-41e5-8b7a-dcc001fdaf35)
 
 
 Ao iniciar a máquina virtual, você acessará o TERMINAL. Use as seguintes credenciais:
