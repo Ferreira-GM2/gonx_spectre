@@ -81,15 +81,17 @@ Se o site indicar que você está conectado à rede Tor, a configuração está 
 #### 2. Aliases de Comandos Úteis
 Para facilitar seu trabalho, alguns aliases foram adicionados ao seu ~/.bashrc:
 
-ll: ls -l (lista detalhada)
-la: ls -la (lista detalhada incluindo arquivos ocultos)
-up: sudo apt update && sudo apt upgrade -y (atualiza e faz upgrade de pacotes)
-ssn: sudo shutdown -h now (desliga o sistema imediatamente)
-sshon: sudo systemctl start ssh (inicia o serviço SSH)
-sshoff: sudo systemctl stop ssh (para o serviço SSH)
-sshstat: sudo systemctl status ssh (verifica o status do serviço SSH)
+- ll: ls -l (lista detalhada)
+- la: ls -la (lista detalhada incluindo arquivos ocultos)
+- up: sudo apt update && sudo apt upgrade -y (atualiza e faz upgrade de pacotes)
+- ssn: sudo shutdown -h now (desliga o sistema imediatamente)
+- sshon: sudo systemctl start ssh (inicia o serviço SSH)
+- sshoff: sudo systemctl stop ssh (para o serviço SSH)
+- sshstat: sudo systemctl status ssh (verifica o status do serviço SSH)
+
+
 Ferramentas de Anonimato e Privacidade
-A Gonx Spectre vem com um arsenal de ferramentas para proteger sua identidade e dados.
+A Gonx Spectre vem com algumas ferramentas para proteger sua identidade e dados.
 
 #### 3. Limpeza de Rastros com sensitive_clear.sh
 Um script poderoso chamado sensitive_clear.sh está disponível em seu diretório home (~/.sensitive_clear.sh) para apagar logs do sistema, histórico de comandos e dados de navegadores terminal de forma segura usando shred, PORTANTO BAIXE E TRABALHE EM ARQUIVOS SENSÍVEIS NO DIRETÓRIO /tmp/sensitive, após suas atividades, basta executar o script de limpeza e sobrescrita.
