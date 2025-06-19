@@ -78,7 +78,7 @@ O serviço Tor já está habilitado e em execução. Você pode verificar seu st
 
 Se o site indicar que você está conectado à rede Tor, a configuração está funcionando corretamente.
 
-2. Aliases de Comandos Úteis
+#### 2. Aliases de Comandos Úteis
 Para facilitar seu trabalho, alguns aliases foram adicionados ao seu ~/.bashrc:
 
 ll: ls -l (lista detalhada)
@@ -91,16 +91,17 @@ sshstat: sudo systemctl status ssh (verifica o status do serviço SSH)
 Ferramentas de Anonimato e Privacidade
 A Gonx Spectre vem com um arsenal de ferramentas para proteger sua identidade e dados.
 
-1. Limpeza de Rastros com sensitive_clear.sh
+#### 3. Limpeza de Rastros com sensitive_clear.sh
 Um script poderoso chamado sensitive_clear.sh está disponível em seu diretório home (~/.sensitive_clear.sh) para apagar logs do sistema, histórico de comandos e dados de navegadores terminal de forma segura usando shred, PORTANTO BAIXE E TRABALHE EM ARQUIVOS SENSÍVEIS NO DIRETÓRIO /tmp/sensitive, após suas atividades, basta executar o script de limpeza e sobrescrita.
 
 Uso:
 
 > sudo bash ~/.sensitive_clear.sh
 
+
 Recomendação: Execute este script regularmente, especialmente antes de desligar ou após sessões de uso intensivo para garantir que nenhum rastro seja deixado.
 
-2. Outras Ferramentas de Privacidade e Segurança
+#### 4. Outras Ferramentas de Privacidade e Segurança
 cryptsetup: Ferramenta para gerenciar partições criptografadas (LUKS).
 gnupg: Implementação do OpenPGP para criptografia e assinatura de dados.
 wipe: Apaga arquivos de forma segura, impossibilitando recuperação.
@@ -114,7 +115,7 @@ O usuário spectre já foi adicionado ao grupo wireshark para permitir a captura
 Ferramentas de OSINT (Open Source Intelligence)
 A Spectre Edition inclui um conjunto robusto de ferramentas OSINT, a maioria delas instaladas em ambientes virtuais (venv) para manter o sistema limpo e evitar conflitos de dependências. As ferramentas estão localizadas no diretório ~/osint-tools.
 
-1. Maigret (Busca de Nomes de Usuário em Redes Sociais)
+#### 5. Maigret (Busca de Nomes de Usuário em Redes Sociais)
 Localização: ~/osint-tools/maigret
 
 Ativação do Ambiente Virtual:
@@ -130,7 +131,7 @@ Para buscar um nome de usuário em diversas plataformas:
 
 Nota: Sempre use o proxychains4 ou configure o proxy diretamente nas ferramentas para garantir que as requisições passem pelo Tor.
 
-2. SpiderFoot (Ferramenta de Reconhecimento Automatizada)
+#### 6. SpiderFoot (Ferramenta de Reconhecimento Automatizada)
 Localização: ~/osint-tools/spiderfoot
 
 Ativação do Ambiente Virtual:
@@ -148,7 +149,7 @@ O sfcli.py é a interface de linha de comando do SpiderFoot. Para iniciar um sca
 
 Recomendação: Para uso completo do SpiderFoot com sua interface web, você precisaria de um ambiente gráfico e configurar o acesso via navegador, o que não é o foco desta distro. A versão CLI é útil para automação e scripts.
 
-3. Sherlock (Encontre Nomes de Usuário em Mais de 300 Redes Sociais)
+#### 7. Sherlock (Encontre Nomes de Usuário em Mais de 300 Redes Sociais)
 Localização: ~/osint-tools/sherlock
 
 Ativação do Ambiente Virtual:
@@ -162,7 +163,7 @@ Para verificar a existência de um nome de usuário:
 
 > proxychains4 sherlock nome_de_usuario
 
-4. Recon-ng (Framework de Reconhecimento)
+#### 8. Recon-ng (Framework de Reconhecimento)
 Localização: ~/osint-tools/recon-ng
 
 Ativação do Ambiente Virtual:
@@ -187,7 +188,7 @@ options set SOURCE example.com
 Executar o módulo:
 run
 
-5. theHarvester (Coleta de Informações de Subdomínios, E-mails, etc.)
+#### 9. theHarvester (Coleta de Informações de Subdomínios, E-mails, etc.)
 Localização: ~/osint-tools/theHarvester
 
 Ativação do Ambiente Virtual:
@@ -199,9 +200,11 @@ Exemplo de Uso:
 
 Para buscar e-mails e subdomínios de um domínio usando a fonte Google:
 
-- bash
-proxychains4 theHarvester -d example.com -l 500 -b google
-6. Holehe (Verifica se um E-mail está Registrado em Sites)
+
+> proxychains4 theHarvester -d example.com -l 500 -b google
+
+
+#### 10. Holehe (Verifica se um E-mail está Registrado em Sites)
 Localização: ~/osint-tools/holehe
 
 Ativação do Ambiente Virtual:
@@ -216,7 +219,8 @@ Para verificar se um e-mail está associado a serviços online:
 
 > proxychains4 holehe usuario@exemplo.com
 
-Outras Ferramentas Incluídas
+#### 11. Outras Ferramentas Incluídas
+
 John (John the Ripper): Utilitário de cracking de senhas.
 Exemplo: john --wordlist=rockyou.txt hash_file.txt
 hashcat: O recuperador de senhas mais rápido e avançado do mundo.
