@@ -24,9 +24,7 @@ A **Gonx Spectre Edition V4.1** foi desenvolvida pensando em usuários que neces
 
 O arquivo `.ova` da Gonx Spectre Edition V4.1, está disponível para download nos seguintes espelhos:
 
-* **Google Drive:** [Link para o Google Drive](https://drive.google.com/sua_pasta/gonx_spectre_v4.1.ova.xz)
-* **Mega.nz:** [Link para o Mega.nz](https://mega.nz/file/sua_distro.ova.xz)
-* **Internet Archive:** [Link para o Internet Archive](https://archive.org/details/gonx_spectre_v4.1)
+* **Internet Archive:** [Link para o Internet Archive](https://archive.org/details/gonx-spectre-v-4.1)
 
 Após baixar o arquivo, importe-o para seu software de virtualização.
 
