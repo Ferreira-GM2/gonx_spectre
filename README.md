@@ -52,23 +52,23 @@ O serviço Tor já está habilitado e em execução. Você pode verificar seu st
 
 > systemctl status tor
 
-###Poderá taambém verificar com curl ou navegadores de terminal
-
-bash
-proxychains4 curl https://check.torproject.org
+### Poderá taambém verificar com curl ou navegadores de terminal
 
 
-bash
-proxychains4 lynx https://check.torproject.org
-proxychains4 elinks https://check.torproject.org
-proxychains4 w3m https://check.torproject.org
+> proxychains4 curl https://check.torproject.org
 
-###Ou com funções para rotatividade de user agents
 
-- bash
-gonxlynx https://check.torproject.org
-gonxelinks https://check.torproject.org
-gonxw3m https://check.torproject.org
+
+> proxychains4 lynx https://check.torproject.org
+> proxychains4 elinks https://check.torproject.org
+> proxychains4 w3m https://check.torproject.org
+
+### Ou com funções para rotatividade de user agents
+
+
+> gonxlynx https://check.torproject.org
+> gonxelinks https://check.torproject.org
+> gonxw3m https://check.torproject.org
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -92,8 +92,7 @@ Um script poderoso chamado sensitive_clear.sh está disponível em seu diretóri
 
 Uso:
 
-- bash
-sudo bash ~/.sensitive_clear.sh
+> sudo bash ~/.sensitive_clear.sh
 Recomendação: Execute este script regularmente, especialmente antes de desligar ou após sessões de uso intensivo para garantir que nenhum rastro seja deixado.
 
 2. Outras Ferramentas de Privacidade e Segurança
@@ -115,15 +114,15 @@ Localização: ~/osint-tools/maigret
 
 Ativação do Ambiente Virtual:
 
-- bash
-cd ~/osint-tools/maigret
-source venv/bin/activate
+> cd ~/osint-tools/maigret
+> source venv/bin/activate
+
 Exemplo de Uso:
 
 Para buscar um nome de usuário em diversas plataformas:
 
-- bash
-maigret --proxy socks5://127.0.0.1:9050 nome_de_usuario
+> maigret --proxy socks5://127.0.0.1:9050 nome_de_usuario
+
 Nota: Sempre use o proxychains4 ou configure o proxy diretamente nas ferramentas para garantir que as requisições passem pelo Tor.
 
 2. SpiderFoot (Ferramenta de Reconhecimento Automatizada)
@@ -131,18 +130,17 @@ Localização: ~/osint-tools/spiderfoot
 
 Ativação do Ambiente Virtual:
 
-- bash
-cd ~/osint-tools/spiderfoot
-source venv/bin/activate
+> cd ~/osint-tools/spiderfoot
+> source venv/bin/activate
+
 Uso (Interface de Linha de Comando):
 
-Bash
+> sudo sfcli.py
 
-sudo sfcli.py
 O sfcli.py é a interface de linha de comando do SpiderFoot. Para iniciar um scan:
 
-- bash
-sfcli.py --target exemplo.com --modules all --level 3 --output file.json
+> sfcli.py --target exemplo.com --modules all --level 3 --output file.json
+
 Recomendação: Para uso completo do SpiderFoot com sua interface web, você precisaria de um ambiente gráfico e configurar o acesso via navegador, o que não é o foco desta distro. A versão CLI é útil para automação e scripts.
 
 3. Sherlock (Encontre Nomes de Usuário em Mais de 300 Redes Sociais)
@@ -150,28 +148,27 @@ Localização: ~/osint-tools/sherlock
 
 Ativação do Ambiente Virtual:
 
-- bash
-cd ~/osint-tools/sherlock
-source venv/bin/activate
+> cd ~/osint-tools/sherlock
+> source venv/bin/activate
+
 Exemplo de Uso:
 
 Para verificar a existência de um nome de usuário:
 
-- bash
-proxychains4 sherlock nome_de_usuario
+> proxychains4 sherlock nome_de_usuario
+
 4. Recon-ng (Framework de Reconhecimento)
 Localização: ~/osint-tools/recon-ng
 
 Ativação do Ambiente Virtual:
 
-- bash
-cd ~/osint-tools/recon-ng
-source venv/bin/activate
+> cd ~/osint-tools/recon-ng
+> source venv/bin/activate
 
 Inicialização:
 
-- bash
-./recon-ng
+> ./recon-ng
+
 Exemplos de Comandos dentro do Recon-ng:
 
 Criar um workspace:
@@ -190,9 +187,9 @@ Localização: ~/osint-tools/theHarvester
 
 Ativação do Ambiente Virtual:
 
-- bash
-cd ~/osint-tools/theHarvester
-source venv/bin/activate
+> cd ~/osint-tools/theHarvester
+> source venv/bin/activate
+
 Exemplo de Uso:
 
 Para buscar e-mails e subdomínios de um domínio usando a fonte Google:
@@ -204,15 +201,16 @@ Localização: ~/osint-tools/holehe
 
 Ativação do Ambiente Virtual:
 
-- bash
-cd ~/osint-tools/holehe
-source venv/bin/activate
+> cd ~/osint-tools/holehe
+> source venv/bin/activate
+
 Exemplo de Uso:
 
 Para verificar se um e-mail está associado a serviços online:
 
-- bash
-proxychains4 holehe usuario@exemplo.com
+
+> proxychains4 holehe usuario@exemplo.com
+
 Outras Ferramentas Incluídas
 John (John the Ripper): Utilitário de cracking de senhas.
 Exemplo: john --wordlist=rockyou.txt hash_file.txt
@@ -231,10 +229,11 @@ bash-completion: Habilita o auto-completar para comandos e argumentos no Bash.
 Desinstalação e Limpeza de Pacotes
 Caso precise remover um programa específico e limpar os rastros:
 
-- bash
-sudo apt remove --purge <nome_do_programa>
-sudo apt autoremove
-sudo apt clean
+
+> sudo apt remove --purge <nome_do_programa>
+> sudo apt autoremove
+> sudo apt clean
+
 Use sudo apt purge para remover o programa e seus arquivos de configuração. Em seguida, autoremove para remover dependências não utilizadas e clean para limpar o cache de pacotes baixados.
 
 Função extract
@@ -242,13 +241,14 @@ Uma função extract foi adicionada ao seu ~/.bashrc para facilitar a descompact
 
 Uso:
 
-- bash
-extract <arquivo_compactado>
+> extract <arquivo_compactado>
+
 Exemplos:
 
-extract arquivo.tar.gz
-extract meu_documento.zip
-extract extract software.7z
+> extract arquivo.tar.gz
+> extract meu_documento.zip
+> extract extract software.7z
+
 Considerações Finais e Dicas de Segurança
 A Gonx Spectre Edition V4.1 é uma ferramenta poderosa para privacidade e OSINT, mas lembre-se:
 
