@@ -3,7 +3,7 @@
 ![gonx_spectre_bg](https://github.com/user-attachments/assets/6e98c4cb-7cc4-43a5-9928-a9f5fb57aa7e)
 
 
-## Sua Plataforma Segura para Pesquisa e Navegação Anônima
+## Sistema Operacional para Pesquisa e Navegação Anônima
 
 Bem-vindo à **Gonx Spectre Edition V4.1**, uma distribuição Linux projetada para oferecer um ambiente robusto e discreto para suas atividades online. Esta distro foi otimizada para navegação anônima e equipada com um conjunto de ferramentas essenciais para segurança, privacidade e OSINT (Open Source Intelligence). No momento somente a versão .ova para virtualbox está disponível, em breve a imagem .iso .vmdk e .qcow2 também será compartilhada para quem desejar contribuir com o projeto! 
 
