@@ -11,13 +11,13 @@ Bem-vindo à **Gonx Spectre Edition V4.1**, uma distribuição Linux projetada p
 
 ### Por Que Usar a Gonx Spectre Edition V4.1?
 
-A **Gonx Spectre Edition V4.1** foi desenvolvida pensando em usuários que necessitam de um ambiente controlado para realizar pesquisas, acessar informações e operar online com um alto grau de privacidade. Ela se destaca por:
+A **Gonx Spectre Edition V4.1** foi desenvolvida pensando em usuários que necessitam de um ambiente controlado para realizar pesquisas, acessar informações e operar online com um alto grau de privacidade:
 
 * **Anonimato Integrado**: Com o **Tor** pré-configurado e o **ProxyChains4**, suas conexões são roteadas através da rede Tor, dificultando o rastreamento da sua atividade online.
 * **Ferramentas de Privacidade**: Inclui utilitários para limpeza de rastros, criptografia de dados e remoção de metadados, garantindo que suas ações permaneçam confidenciais.
 * **Recursos de OSINT**: Pacotes como **Maigret**, **SpiderFoot**, **Sherlock**, **Recon-ng** e **theHarvester** transformam a Spectre em uma poderosa caixa de ferramentas para investigação e coleta de informações de fontes abertas.
 * **Otimização**: Partindo de um Debian Server minimalista, foram removidos alguns componentes desnecessários (como ambientes gráficos e serviços de impressão), resultando em um sistema focado em desempenho.
-* **Customização Avançada**: Com aliases de comando convenientes e um script de limpeza de rastros, a Spectre foi personalizada para ser intuitiva e eficiente.
+* **Customização Avançada**: Com aliases de comando convenientes e um script de limpeza de rastros.
 
 ---
 ### Download da Gonx Spectre Edition V4.1
@@ -67,10 +67,10 @@ EM OUTRO TERMINAL PARA CONEXÃO SSH BASTA DIGTAL
 PASSWORD: spectre
 
 
-O TECLADO PADRÃO NÃO É O br-abnt2, entretanto recomendamos manter o padrão US, para maior conforto de escrita faça uma conexão ssh e quando finalizar as atividades desative o ssh. 
+O TECLADO PADRÃO NÃO É O br-abnt2, entretanto recomendamos manter o padrão US. Para maior conforto de escrita (se assim desejar), faça uma conexão ssh e quando finalizar as atividades desative o ssh. 
 COMANDOS ÚTEIS PARA O SSH:
 
-> sshoff `desativa o ssh (recomendamos mante-lo desativado` 
+> sshoff `desativa o ssh (recomendamos mante-lo desativado)` 
 > sshon `ativa o ssh`
 > sshstat `verifica o estado do ssh`
 
@@ -129,9 +129,11 @@ Ferramentas de Anonimato e Privacidade
 A Gonx Spectre vem com algumas ferramentas para proteger sua identidade e dados.
 
 #### 3. Limpeza de Rastros com sensitive_clear.sh
-Um script poderoso chamado sensitive_clear.sh está disponível em seu diretório home (~/.sensitive_clear.sh) para apagar logs do sistema, histórico de comandos e dados de navegadores terminal de forma segura usando shred, PORTANTO BAIXE E TRABALHE EM ARQUIVOS SENSÍVEIS NO DIRETÓRIO /tmp/sensitive, após suas atividades, basta executar o script de limpeza e sobrescrita.
+O script sensitive_clear.sh está disponível em seu diretório home (~/.sensitive_clear.sh) para apagar logs do sistema, e dados de navegadores terminal de forma segura usando shred, PORTANTO BAIXE E TRABALHE EM ARQUIVOS SENSÍVEIS NO DIRETÓRIO /tmp/sensitive, após suas atividades, basta executar o script de limpeza e sobrescrita.
 
 Uso:
+
+> cd ~
 
 > sudo bash ~/.sensitive_clear.sh
 
@@ -139,17 +141,25 @@ Uso:
 Recomendação: Execute este script regularmente, especialmente antes de desligar ou após sessões de uso intensivo para garantir que nenhum rastro seja deixado.
 
 #### 4. Outras Ferramentas de Privacidade e Segurança
-cryptsetup: Ferramenta para gerenciar partições criptografadas (LUKS).
-gnupg: Implementação do OpenPGP para criptografia e assinatura de dados.
-wipe: Apaga arquivos de forma segura, impossibilitando recuperação.
-secure-delete: Pacote que inclui ferramentas como srm (Secure Remove) para exclusão segura de arquivos e diretórios.
-mat2: Uma ferramenta para remover metadados de arquivos (imagens, documentos, áudios, etc.).
+
+- cryptsetup: Ferramenta para gerenciar partições criptografadas (LUKS).
+- gnupg: Implementação do OpenPGP para criptografia e assinatura de dados.
+- wipe: Apaga arquivos de forma segura, impossibilitando recuperação.
+- secure-delete: Pacote que inclui ferramentas como srm (Secure Remove) para exclusão segura de arquivos e diretórios.
+- mat2: Uma ferramenta para remover metadados de arquivos (imagens, documentos, áudios, etc.).
+
 Exemplo de uso: mat2 imagem.jpg
-exiftool: Uma ferramenta para ler, gravar e editar metadados em diversos formatos de arquivos.
+
+- exiftool: Uma ferramenta para ler, gravar e editar metadados em diversos formatos de arquivos.
+  
 Exemplo de uso: exiftool -all= imagem.jpg (remove todos os metadados)
-wireshark: Um analisador de protocolo de rede para capturar e inspecionar o tráfego de rede. Lembre-se de usá-lo com cautela e sob a devida permissão.
+
+- wireshark: Um analisador de protocolo de rede para capturar e inspecionar o tráfego de rede. Lembre-se de usá-lo com cautela e sob a devida permissão.
+  
 O usuário spectre já foi adicionado ao grupo wireshark para permitir a captura de pacotes.
+
 Ferramentas de OSINT (Open Source Intelligence)
+
 A Spectre Edition inclui um conjunto robusto de ferramentas OSINT, a maioria delas instaladas em ambientes virtuais (venv) para manter o sistema limpo e evitar conflitos de dependências. As ferramentas estão localizadas no diretório ~/osint-tools.
 
 #### 5. Maigret (Busca de Nomes de Usuário em Redes Sociais)
@@ -158,6 +168,7 @@ Localização: ~/osint-tools/maigret
 Ativação do Ambiente Virtual:
 
 > cd ~/osint-tools/maigret
+
 > source venv/bin/activate
 
 Exemplo de Uso:
@@ -174,6 +185,7 @@ Localização: ~/osint-tools/spiderfoot
 Ativação do Ambiente Virtual:
 
 > cd ~/osint-tools/spiderfoot
+
 > source venv/bin/activate
 
 Uso (Interface de Linha de Comando):
@@ -192,6 +204,7 @@ Localização: ~/osint-tools/sherlock
 Ativação do Ambiente Virtual:
 
 > cd ~/osint-tools/sherlock
+
 > source venv/bin/activate
 
 Exemplo de Uso:
@@ -206,6 +219,7 @@ Localização: ~/osint-tools/recon-ng
 Ativação do Ambiente Virtual:
 
 > cd ~/osint-tools/recon-ng
+
 > source venv/bin/activate
 
 Inicialização:
@@ -215,15 +229,24 @@ Inicialização:
 Exemplos de Comandos dentro do Recon-ng:
 
 Criar um workspace:
-workspaces create myworkspace
+
+> workspaces create myworkspace
+
 Pesquisar módulos:
-modules search domain
+
+> modules search domain
+
 Carregar um módulo:
-modules load recon/domains-hosts/google_site_web
+
+> modules load recon/domains-hosts/google_site_web
+
 Definir opções do módulo:
-options set SOURCE example.com
+
+> options set SOURCE example.com
+
 Executar o módulo:
-run
+
+> run
 
 #### 9. theHarvester (Coleta de Informações de Subdomínios, E-mails, etc.)
 Localização: ~/osint-tools/theHarvester
