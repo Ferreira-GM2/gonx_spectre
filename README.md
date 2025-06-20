@@ -254,6 +254,7 @@ Localização: ~/osint-tools/theHarvester
 Ativação do Ambiente Virtual:
 
 > cd ~/osint-tools/theHarvester
+
 > source venv/bin/activate
 
 Exemplo de Uso:
@@ -270,6 +271,7 @@ Localização: ~/osint-tools/holehe
 Ativação do Ambiente Virtual:
 
 > cd ~/osint-tools/holehe
+
 > source venv/bin/activate
 
 Exemplo de Uso:
@@ -281,26 +283,32 @@ Para verificar se um e-mail está associado a serviços online:
 
 #### 11. Outras Ferramentas Incluídas
 
-John (John the Ripper): Utilitário de cracking de senhas.
+ - John (John the Ripper): Utilitário de cracking de senhas.
 Exemplo: john --wordlist=rockyou.txt hash_file.txt
-hashcat: O recuperador de senhas mais rápido e avançado do mundo.
+
+- hashcat: O recuperador de senhas mais rápido e avançado do mundo.
 Exemplo: hashcat -m 0 hash.txt passwordlist.txt (Para hashes MD5)
-tmux: Multiplexador de terminal que permite gerenciar várias sessões de terminal em uma única janela. Essencial para manter processos rodando em segundo plano.
+
+- tmux: Multiplexador de terminal que permite gerenciar várias sessões de terminal em uma única janela. Essencial para manter processos rodando em segundo plano.
 Comandos básicos: tmux (inicia uma nova sessão), Ctrl+b d (desanexa a sessão), tmux attach (reconecta à última sessão).
-nmap: Scanner de rede para descoberta de hosts e portas.
+
+- nmap: Scanner de rede para descoberta de hosts e portas.
 Exemplo: proxychains4 nmap -sT -p 80,443 example.com (Scan de portas TCP via Tor)
-netcat-traditional: Ferramenta de rede para leitura e escrita através de conexões de rede.
-curl, wget: Ferramentas para transferência de dados com URLs.
-git: Sistema de controle de versão para clonar repositórios.
-htop: Monitor de processos interativo.
-man-db: Banco de dados de páginas de manual para obter ajuda sobre comandos.
-bash-completion: Habilita o auto-completar para comandos e argumentos no Bash.
-Desinstalação e Limpeza de Pacotes
-Caso precise remover um programa específico e limpar os rastros:
+
+- netcat-traditional: Ferramenta de rede para leitura e escrita através de conexões de rede.
+- curl, wget: Ferramentas para transferência de dados com URLs.
+- git: Sistema de controle de versão para clonar repositórios.
+- htop: Monitor de processos interativo.
+- man-db: Banco de dados de páginas de manual para obter ajuda sobre comandos.
+- bash-completion: Habilita o auto-completar para comandos e argumentos no Bash.
+- Desinstalação e Limpeza de Pacotes
+- Caso precise remover um programa específico e limpar os rastros:
 
 
 > sudo apt remove --purge <nome_do_programa>
+
 > sudo apt autoremove
+
 > sudo apt clean
 
 Use sudo apt purge para remover o programa e seus arquivos de configuração. Em seguida, autoremove para remover dependências não utilizadas e clean para limpar o cache de pacotes baixados.
@@ -315,7 +323,9 @@ Uso:
 Exemplos:
 
 > extract arquivo.tar.gz
+
 > extract meu_documento.zip
+
 > extract software.7z
 
 Considerações Finais e Dicas de Segurança
