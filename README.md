@@ -328,10 +328,10 @@ Exemplos:
 
 > extract software.7z
 
-Considerações Finais e Dicas de Segurança
-A Gonx Spectre Edition V4.1 é uma ferramenta poderosa para privacidade e OSINT, mas lembre-se:
+#### Considerações Finais:
 
 Nenhum sistema é 100% à prova de falhas: Sempre combine o uso desta distro com boas práticas de segurança, como senhas fortes e o uso consciente da internet.
+
 Firewall (iptables): A distro inclui iptables. Considere configurar regras de firewall para restringir ainda mais o tráfego de saída e entrada, permitindo apenas o necessário para suas operações via Tor.
 Atualizações: Mantenha o sistema atualizado com o comando up (ou sudo apt update && sudo apt upgrade -y) regularmente para garantir que você tenha as últimas correções de segurança e recursos.
 Anonimato não é invencibilidade: O Tor ajuda no anonimato, mas suas ações ainda podem ser rastreadas se você não tomar cuidado (ex: fazer login em contas pessoais, usar informações de identificação).
