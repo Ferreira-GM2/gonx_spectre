@@ -37,7 +37,7 @@ FIQUE A VONTADE PARA INSTALAR O QUE QUISER, ESTA VERSÃO É PARA NAVEGAR COM PRO
 
 * **Teste**: `proxychains4 lynx check.torproject.org`
 
-  Você deverá receber uma mensagem de confirmação de configuração correta para utilizar o tor brouwser!!!
+  Você deverá receber uma mensagem de confirmação de configuração correta para utilizar o tor browser!!!
 
   
 
