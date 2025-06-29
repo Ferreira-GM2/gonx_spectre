@@ -25,6 +25,7 @@ A **Gonx Spectre Edition V4.1** foi desenvolvida pensando em usuários que neces
 O arquivo `.ova` da Gonx Spectre Edition V4.1, está disponível para download nos seguintes espelhos:
 
 * **Internet Archive:** [Link para o Internet Archive](https://archive.org/details/gonx-spectre-v-4.1)
+* **Versão Minimal** https://github.com/Ferreira-GM2/gonx_spectre/releases/download/untagged-c7e0c4c089406871dcde/Gonx-Spectre-Minimal_v2.3.ova
 
 Após baixar o arquivo, importe-o para seu software de virtualização.
 
