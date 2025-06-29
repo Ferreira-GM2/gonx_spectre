@@ -38,7 +38,9 @@ FIQUE A VONTADE PARA INSTALAR O QUE QUISER, ESTA VERSÃO É PARA NAVEGAR COM PRO
 
   Você deverá receber uma mensagem de confirmação de configuração correta para utilizar o tor brouwser!!!
 
-Após baixar o arquivo, importe-o para seu software de virtualização.
+  
+
+Após baixar o arquivo (VERSÃO 4.1 15GB), importe-o para seu software de virtualização.
 
 RECOMENDAMOS A UTILIZAÇÃO EM MODO ESCALONADO PARA MELHOR VISUALIZAÇÃO DA TELA NO VIRTUALBOX, CLICANDO EM `visualizar` | `Alternar para o mode escalonado`, ou HOST + C no teclado.
 ---
