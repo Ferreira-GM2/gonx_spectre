@@ -9,9 +9,9 @@ Essa é uma distribuição Linux projetada para oferecer um ambiente robusto e d
 
 ---
 
-### Por Que Usar a Gonx Spectre Edition V4.1?
+### Por Que Usar a Gonx Spectre Edition?
 
-A **Gonx Spectre Edition V4.1** foi desenvolvida pensando em usuários que necessitam de um ambiente controlado para realizar pesquisas, acessar informações e operar online com um alto grau de privacidade:
+A **Gonx Spectre Edition** foi desenvolvida pensando em usuários que necessitam de um ambiente controlado para realizar pesquisas, acessar informações e operar online com um alto grau de privacidade:
 
 * **Anonimato Integrado**: Com o **Tor** pré-configurado e o **ProxyChains4**, suas conexões são roteadas através da rede Tor, dificultando o rastreamento da sua atividade online.
 * **Ferramentas de Privacidade**: Inclui utilitários para limpeza de rastros, criptografia de dados e remoção de metadados, garantindo que suas ações permaneçam confidenciais.
@@ -20,12 +20,12 @@ A **Gonx Spectre Edition V4.1** foi desenvolvida pensando em usuários que neces
 * **Customização Avançada**: Com aliases de comando convenientes e um script de limpeza de rastros.
 
 ---
-### Download da Gonx Spectre Edition V4.1
+### Download da Gonx Spectre Edition
 
 O arquivo `.ova` da Gonx Spectre Edition, está disponível para download nos seguintes espelhos:
 
 * **Versão 4.1 (15Gb - base Debian) - Internet Archive:** [Link para o Internet Archive](https://archive.org/details/gonx-spectre-v-4.1)
-* **Versão Minima (193Mb - base apk):** https://github.com/Ferreira-GM2/gonx_spectre/releases/download/untagged-c7e0c4c089406871dcde/Gonx-Spectre-Minimal_v2.3.ova
+* **Versão 2.3 MinimaL Edition (193Mb - base Alpine):** https://github.com/Ferreira-GM2/gonx_spectre/releases/download/untagged-c7e0c4c089406871dcde/Gonx-Spectre-Minimal_v2.3.ova
 
 OBS: PARA A VERSÃO MÍNIMA FUNCIONAL, ACESSE COM:
 
