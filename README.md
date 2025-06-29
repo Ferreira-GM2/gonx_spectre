@@ -25,7 +25,7 @@ A **Gonx Spectre Edition** foi desenvolvida pensando em usuários que necessitam
 O arquivo `.ova` da Gonx Spectre Edition, está disponível para download nos seguintes espelhos:
 
 * **Versão 4.1 (15Gb - base Debian):** [Download](https://archive.org/details/gonx-spectre-v-4.1)
-* **Versão 2.3 MinimaL Edition (193Mb - base Alpine):** [Download]([https://archive.org/details/gonx-spectre-v-4.1](https://github.com/Ferreira-GM2/gonx_spectre/releases/download/untagged-c7e0c4c089406871dcde/Gonx-Spectre-Minimal_v2.3.ova))
+* **Versão 2.3 MinimaL Edition (193Mb - base Alpine):** [Download](https://github.com/Ferreira-GM2/gonx_spectre/releases/download/untagged-c7e0c4c089406871dcde/Gonx-Spectre-Minimal_v2.3.ova)
 
 
 OBS: PARA A VERSÃO MÍNIMA FUNCIONAL, ACESSE COM:
