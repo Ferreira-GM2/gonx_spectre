@@ -22,10 +22,21 @@ A **Gonx Spectre Edition V4.1** foi desenvolvida pensando em usuários que neces
 ---
 ### Download da Gonx Spectre Edition V4.1
 
-O arquivo `.ova` da Gonx Spectre Edition V4.1, está disponível para download nos seguintes espelhos:
+O arquivo `.ova` da Gonx Spectre Edition, está disponível para download nos seguintes espelhos:
 
-* **Internet Archive:** [Link para o Internet Archive](https://archive.org/details/gonx-spectre-v-4.1)
-* **Versão Minimal** https://github.com/Ferreira-GM2/gonx_spectre/releases/download/untagged-c7e0c4c089406871dcde/Gonx-Spectre-Minimal_v2.3.ova
+* **Versão 4.1 (15Gb - base Debian) - Internet Archive:** [Link para o Internet Archive](https://archive.org/details/gonx-spectre-v-4.1)
+* **Versão Minima (193Mb - base apk):** https://github.com/Ferreira-GM2/gonx_spectre/releases/download/untagged-c7e0c4c089406871dcde/Gonx-Spectre-Minimal_v2.3.ova
+
+OBS: PARA A VERSÃO MÍNIMA FUNCIONAL, ACESSE COM:
+
+* **Login**: `root`
+* **Senha**: `root`
+
+FIQUE A VONTADE PARA INSTALAR O QUE QUISER, ESTA VERSÃO É PARA NAVEGAR COM PROXYCHAIS4 NO TOR: 
+
+* **Teste**: `proxychains4 lynx check.torproject.org`
+
+  Você deverá receber uma mensagem de confirmação de configuração correta para utilizar o tor brouwser!!!
 
 Após baixar o arquivo, importe-o para seu software de virtualização.
 
